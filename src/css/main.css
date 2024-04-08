@@ -1,0 +1,29 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); 
+    gap: 20px; 
+
+    padding: 0 5%; 
+  margin-top: -150px;
+  }
+  
+  .card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cards-container {
+      margin-top: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Each card will occupy full width */
+   padding-bottom: 10px;
+    }
+  }
+  /* Custom styles for 90% zoom level */
+@media screen and (max-width: 900px) {
+.card{
+  background-color: red;
+}
+}
